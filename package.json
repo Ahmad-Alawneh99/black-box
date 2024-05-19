@@ -1,0 +1,22 @@
+{
+  "name": "blackbox",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint"
+  },
+  "devDependencies": {
+    "turbo": "latest",
+    "@repo/eslint-config": "*",
+    "@repo/typescript-config": "*"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "npm@10.1.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}
